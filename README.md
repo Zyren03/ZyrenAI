@@ -1,52 +1,227 @@
-# Zyren AI Universe — V4
+ <div align="center">
 
-Site vitrine statique, indépendant, avec quatre pages et des univers visuels distincts.
+# 🌌 ZYREN AI UNIVERSE
 
-## Lancer
+### `Where Artificial Intelligence Comes Alive`
 
-Ouvrir `index.html` dans un navigateur, ou servir le dossier `ZyrenAI_V4` via localhost (Live Server / Apache / Python `python -m http.server 8000`). Les liens sont relatifs : ne déplace pas les HTML sans les dossiers `css`, `js`, `assets`.
+![Typing Animation](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=A855F7&center=true&vCenter=true&width=650&lines=Welcome+to+Zyren+AI+Universe;AI+Assistants+%7C+Desktop+Companions;Interactive+Experiences;Building+the+Future+of+AI)
 
-## Arborescence
+![Wave](https://capsule-render.vercel.app/api?type=waving&color=0:090014,50:581C87,100:A855F7&height=120&section=header)
 
-- `index.html` — accueil
-- `eva.html` — interface de chat Eva simulée
-- `capri.html` — bureau et réactions Capri simulés
-- `discord.html` — interface Discord simulée
-- `css/global.css`, `css/eva.css`, `css/capri.css`, `css/discord.css`
-- `js/main.js`, `js/eva.js`, `js/capri.js`, `js/discord.js`
-- `assets/videos/eva.mp4`, `capri.mp4`, `discord.mp4` (facultatifs)
+**Un univers numérique dédié aux assistants IA, aux compagnons virtuels et aux expériences interactives.**
 
-## Vidéos
+![HTML](https://img.shields.io/badge/HTML5-111111?style=for-the-badge&logo=html5&logoColor=E34F26)
+![CSS](https://img.shields.io/badge/CSS3-111111?style=for-the-badge&logo=css&logoColor=1572B6)
+![JavaScript](https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Version](https://img.shields.io/badge/VERSION-V6-A855F7?style=for-the-badge)
 
-Déposer une vidéo MP4 sous le nom exact dans `assets/videos/`. Si la vidéo est absente, un encart de remplacement est affiché. Les démonstrations HTML ne contrôlent ni Windows, ni Capri, ni Discord.
+</div>
 
-## Publication
+---
 
-Publier le contenu de ce dossier à la racine du dépôt GitHub Pages (ou adapter le répertoire servi). Les pages utilisent des chemins relatifs, compatibles avec un sous-répertoire comme `localhost/ZyrenAI/`.
+## ✦ Explore the Universe
 
-## Crédits
+<table>
+<tr>
+<td width="33%" align="center">
 
-Site de présentation personnel Zyren AI Lab. Capri est un projet tiers, lien officiel : https://capriai.app/. Aucun partenariat officiel revendiqué. Les éléments d'interface sont des maquettes originales et ne reprennent pas les ressources de Capri ou Discord.
+### 💜 EVA
 
-## Accessibilité et performance
+**Windows AI Assistant**
 
-Mise en page responsive, animations CSS et JS légères, `prefers-reduced-motion`, aucune bibliothèque JS externe. Google Fonts est facultatif ; des polices système prennent le relais hors ligne.
+Assistante virtuelle vocale destinée à Windows.
 
+`Voice Commands` · `Automation` · `C#`
 
-## V4.1 — Démonstration Eva améliorée
+</td>
+<td width="33%" align="center">
 
-La page `eva.html` contient maintenant un bureau Windows **fictif** synchronisé avec un chat interactif, un journal des actions, des réponses temporisées et des exemples cliquables. Aucun accès aux applications Windows, au micro, à l'écran réel ou à Discord.
+### 🌸 CAPRI
 
-Fichiers modifiés : `eva.html`, `css/eva.css`, `js/eva.js`. Pour une mise à jour ciblée, remplace uniquement ces trois fichiers en conservant les dossiers.
+**Desktop Companion**
 
+Compagnon animé et interactif sur le bureau.
 
-## Capri V4.2
-18 sprites PNG issus de sprites.zip dans `assets/capri/`. Expressions et clignements simulés sur la page Capri. Les commandes ne pilotent pas Capri installé.
+`Pixel Art` · `Animations` · `AI`
 
+</td>
+<td width="33%" align="center">
 
-## V5 — Démonstrations interactives
-- `capri.html` : bureau fictif déplaçable avec Capri (glisser-déposer), sprites PNG fournis, humeurs, musique, notes, mainframe et clignement. Le vrai Capri n'est pas piloté par cette page.
-- `discord.html` : interface Discord fictive, salons, messages, saisie libre, commandes slash `/help`, `/ping`, `/profil`, `/stats`, `/avatar`, embeds et réponses simulées. Aucun bot ni serveur réel connecté.
-- Les scripts spécifiques sont `js/capri-playground.js` et `js/discord-lab.js`.
-- Le site fonctionne sans installation Node/Python ni backend : HTML, CSS et JavaScript dans le navigateur. Conserver l'arborescence lors de l'extraction.
-- Tous les sprites viennent du fichier sprites.zip fourni par l'utilisateur.
+### 🤖 EVA DISCORD
+
+**Community Assistant**
+
+Projet de bot communautaire pour Discord.
+
+`Slash Commands` · `Moderation` · `Bot`
+
+</td>
+</tr>
+</table>
+
+---
+
+## ⚡ Interactive Experiences
+
+<details>
+<summary><b>💜 EVA — Windows AI Assistant</b></summary>
+
+### Voice-Controlled Desktop
+
+Eva est un projet d'assistante virtuelle permettant d'explorer les interactions entre la voix, les applications Windows et l'intelligence artificielle.
+
+**Démonstration web :**
+
+- Bureau Windows fictif et interactif.
+- Fenêtres et applications simulées.
+- Historique des commandes.
+- Reconnaissance vocale via le navigateur compatible.
+- Réactions et animations de l'interface.
+
+> La démonstration ne contrôle pas directement Windows.
+
+</details>
+
+<details>
+<summary><b>🌸 CAPRI — Desktop Companion</b></summary>
+
+### Your Animated AI Companion
+
+Une expérience interactive mettant en scène Capri et ses différentes expressions.
+
+**Fonctionnalités présentées :**
+
+- Déplacements animés.
+- Changements d'humeur.
+- Interactions à la souris.
+- Animations de danse et de repos.
+- Menu contextuel.
+- Mainframe et paramètres simulés.
+
+> Capri est un projet tiers. La démonstration web n'est pas connectée au logiciel installé.
+
+**Site officiel :** https://capriai.app/
+
+</details>
+
+<details>
+<summary><b>🤖 EVA DISCORD — Community AI</b></summary>
+
+### Intelligent Community Experience
+
+Une interface inspirée de Discord pour découvrir les fonctionnalités envisagées du bot Eva.
+
+**Démonstration :**
+
+- Salons et conversations fictifs.
+- Commandes slash.
+- Suggestions de commandes.
+- Messages enrichis.
+- Outils de modération simulés.
+- Réponses interactives.
+
+> Aucun serveur Discord réel n'est connecté.
+
+</details>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+![Skills](https://skillicons.dev/icons?i=html,css,js,cs,git,github,vscode,windows&theme=dark)
+
+</div>
+
+Le site est développé en **HTML, CSS et JavaScript**, sans framework obligatoire ni backend.
+
+Les projets présentés peuvent utiliser d'autres technologies indépendamment du site.
+
+---
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/TON_PSEUDO/ZyrenAI.git
+cd ZyrenAI
+python -m http.server 8000
+```
+
+Ouvre ensuite :
+
+`http://localhost:8000/`
+
+Tu peux également utiliser **Live Server** dans VS Code.
+
+---
+
+## 📂 Project Structure
+
+```text
+ZyrenAI/
+├── index.html
+├── eva.html
+├── capri.html
+├── discord.html
+├── css/
+├── js/
+├── assets/
+│   ├── capri/
+│   └── videos/
+└── README.md
+```
+
+---
+
+## 🧬 Development Timeline
+
+```mermaid
+flowchart LR
+    A["V4<br/>Foundation"] --> B["V4.1<br/>Eva"]
+    B --> C["V4.2<br/>Capri Sprites"]
+    C --> D["V5<br/>Interactive Demos"]
+    D --> E["V5.1<br/>Capri Mainframe"]
+    E --> F["V6<br/>Enhanced Universe"]
+
+    style A fill:#160b24,stroke:#9333ea,color:#fff
+    style B fill:#160b24,stroke:#9333ea,color:#fff
+    style C fill:#160b24,stroke:#9333ea,color:#fff
+    style D fill:#160b24,stroke:#9333ea,color:#fff
+    style E fill:#160b24,stroke:#9333ea,color:#fff
+    style F fill:#581c87,stroke:#c084fc,color:#fff
+```
+
+---
+
+## 🌐 Live Website
+
+<div align="center">
+
+[![Visit Website](https://img.shields.io/badge/EXPLORE-ZYREN_AI_UNIVERSE-A855F7?style=for-the-badge&logo=githubpages&logoColor=white)](https://TON_PSEUDO.github.io/ZyrenAI/)
+
+</div>
+
+> Remplace `TON_PSEUDO` par ton identifiant GitHub et active GitHub Pages pour rendre le site accessible.
+
+---
+
+## 🔒 Privacy & Credits
+
+Les démonstrations du site sont des simulations fonctionnant dans le navigateur. Elles ne donnent pas accès au système Windows, à un compte Discord ou à une instance Capri réelle.
+
+Capri et Discord sont des projets ou plateformes tiers. Aucune affiliation officielle n'est revendiquée. Les ressources graphiques tierces restent soumises à leurs licences respectives.
+
+Ne publie aucune clé API, aucun jeton ou identifiant privé dans le dépôt.
+
+---
+
+<div align="center">
+
+### 💜 Created by Zyren
+
+*AI • Creativity • Technology*
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:A855F7,50:581C87,100:090014&height=110&section=footer)
+
+</div>

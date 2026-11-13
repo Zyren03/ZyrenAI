@@ -1,0 +1,40 @@
+
+/* Zyren V8 — original UI inspired by Uiverse interaction patterns, not a copied component */
+:root{--z8-ease:cubic-bezier(.2,.8,.2,1)}
+body{background-color:#070913}
+.project-card{isolation:isolate;position:relative;overflow:hidden;border:1px solid rgba(179,156,255,.17)!important;border-radius:23px!important;background:linear-gradient(148deg,rgba(32,32,55,.87),rgba(12,13,26,.96))!important;box-shadow:0 16px 46px #03040c55,inset 0 1px #ffffff13!important;transition:transform .35s var(--z8-ease),border-color .3s,box-shadow .35s!important}
+.project-card:hover{transform:translateY(-9px)!important;border-color:rgba(194,157,255,.55)!important;box-shadow:0 28px 70px #05020f99,0 0 36px #9c68f21b!important}
+.project-card::before{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;background:radial-gradient(350px circle at var(--mx,50%) var(--my,15%),rgba(173,113,255,.15),transparent 67%);opacity:0;transition:opacity .3s}
+.project-card:hover::before{opacity:1}
+.project-card .project-art{border-radius:18px 18px 0 0;filter:saturate(.9)}
+.project-card .project-card-body{position:relative}
+.project-card .progress-card,.project-status-head .progress-card{--accent:#ae82ff;position:relative;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px;margin:24px 0 8px;padding:0;background:transparent;border:0;box-shadow:none;min-width:0}
+.progress-card::before{display:none}
+.progress-label{display:flex;flex-direction:column;align-items:flex-start;gap:5px;font-size:10px;font-weight:700;letter-spacing:.12em;color:#a7a8c4}
+.progress-value{font-size:26px;line-height:1.1;letter-spacing:-.06em;font-weight:800;color:#f3eaff}
+.progress-track{grid-column:1/-1;position:relative;height:7px;border:0;border-radius:999px;margin:3px 0 0;overflow:hidden;background:#27253a}
+.progress-fill{width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#6c62ff,#b06bfa,#e18fe9);box-shadow:0 0 16px #aa76ff7a;transition:width 1.35s var(--z8-ease)}
+.progress-card.is-visible .progress-fill{width:var(--progress)}
+.progress-note{grid-column:1/-1;margin:0;color:#8f91ae;font-size:10px;line-height:1.5}
+.project-card .go{transition:letter-spacing .25s,color .25s}
+.project-card:hover .go{letter-spacing:.035em;color:#d5baff}
+.project-status-section{max-width:1120px;margin:58px auto 85px}
+.project-status-shell{position:relative;overflow:hidden;border:1px solid #ffffff1c;border-radius:26px;padding:clamp(22px,4vw,44px);background:radial-gradient(ellipse at 100% 0%,#653da024,transparent 45%),linear-gradient(140deg,#151627,#0c0d18 75%);box-shadow:0 24px 75px #02030a77,inset 0 1px #ffffff12}
+.project-status-shell::before{content:"";position:absolute;inset:0 0 auto;height:1px;background:linear-gradient(90deg,transparent,#bc8cff88,transparent)}
+.project-status-head{align-items:center;gap:28px;margin-bottom:28px}
+.project-status-head h2{font-size:clamp(26px,3vw,38px);letter-spacing:-.055em}
+.project-status-head .progress-card{width:260px;padding:16px 18px;border:1px solid #ffffff19;border-radius:17px;background:#ffffff08}
+.project-status-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.project-status-row{position:relative;align-items:flex-start;min-height:96px;padding:19px 18px;border:1px solid #ffffff12;border-radius:16px;background:#ffffff06;transition:background .25s,transform .25s,border-color .25s}
+.project-status-row:hover{background:#b88bff0c;transform:translateY(-3px);border-color:#b58bff55}
+.project-status-row strong{font-size:14px;color:#f5f1ff}
+.project-status-row small{font-size:12px;line-height:1.5;color:#9c9db8}
+.project-status-badge{border-radius:999px;padding:6px 10px;border:1px solid #43d6a34d;background:#43d6a310;color:#6ae2b7;font:700 10px/1.2 system-ui;white-space:nowrap}
+.project-status-badge.wip{border-color:#e9b46a55;background:#e9b46a13;color:#f3bf80}
+.project-status-badge.pending{border-color:#a49bb555;background:#a49bb511;color:#c4bfd1}
+.project-status-disclaimer{font-size:12px;color:#9496b3;margin-top:22px}
+body.eva .progress-fill{background:linear-gradient(90deg,#735cff,#b86dff,#f08dd7)}
+body.capri .progress-fill{background:linear-gradient(90deg,#3477e8,#67b6f8,#9de4ed)}
+body.discord .progress-fill{background:linear-gradient(90deg,#5865f2,#8a85ff,#bd9df8)}
+@media(max-width:680px){.project-status-list{grid-template-columns:1fr}.project-status-head .progress-card{width:100%}.project-status-row{min-height:0}.project-card:hover{transform:none!important}}
+@media(prefers-reduced-motion:reduce){.project-card,.project-status-row,.progress-fill{transition:none!important}.project-card:hover,.project-status-row:hover{transform:none!important}}

@@ -1,0 +1,1 @@
+(()=>{const items=document.querySelectorAll('.progress-card');if(!('IntersectionObserver' in window)){items.forEach(e=>e.classList.add('is-visible'));return;}const obs=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('is-visible');obs.unobserve(x.target)}}),{threshold:.15});items.forEach(e=>obs.observe(e));})();

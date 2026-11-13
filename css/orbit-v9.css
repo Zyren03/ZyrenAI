@@ -1,0 +1,32 @@
+/* Zyren AI Universe · original interactive orbit */
+.orbit-universe{--orbit-size:min(31vw,440px);position:relative!important;display:grid;place-items:center;width:var(--orbit-size);height:var(--orbit-size);min-width:320px;min-height:320px;margin:auto;border-radius:50%;isolation:isolate;background:radial-gradient(circle,#9f70ec20 0%,#8e52df10 32%,transparent 67%)}
+.orbit-universe:before{content:"";position:absolute;inset:2%;border:1px solid #bca1ff2b;border-radius:50%;box-shadow:0 0 90px #9761eb20}
+.orbit-ring{position:absolute;border-radius:50%;pointer-events:none}
+.orbit-ring-outer{inset:8%;border:1px dashed #ad83f450;animation:orbit-ring-spin 75s linear infinite}
+.orbit-ring-inner{inset:24%;border:1px solid #a98bf15c;box-shadow:0 0 40px #9c68ff0b,inset 0 0 55px #8b57ee13}
+.orbit-core{position:absolute;display:flex;flex-direction:column;align-items:center;gap:6px;z-index:2;filter:drop-shadow(0 0 30px #ab83ff77);pointer-events:none}
+.orbit-core strong{font-size:clamp(62px,6vw,95px);line-height:1;color:#f5edff}
+.orbit-core span{font:700 9px/1.5 system-ui,sans-serif;letter-spacing:.27em;color:#c9a9ff}
+.orbit-path{position:absolute;inset:0;z-index:3;animation:orbit-spin 24s linear infinite}
+.orbit-stop{position:absolute;left:50%;top:50%;width:0;height:0;display:grid;place-items:center;text-decoration:none;outline-offset:10px}
+.orbit-eva{--start-angle:0deg;transform:rotate(0deg) translateY(calc(var(--orbit-size) * -.42))}
+.orbit-capri{--start-angle:120deg;transform:rotate(120deg) translateY(calc(var(--orbit-size) * -.42))}
+.orbit-discord{--start-angle:240deg;transform:rotate(240deg) translateY(calc(var(--orbit-size) * -.42))}
+.orbit-token{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:78px;height:78px;border:1px solid #bfa1ff66;border-radius:20px;background:linear-gradient(140deg,#25203e,#0d1022);box-shadow:0 10px 35px #050410c9,0 0 25px #9c63ff2e;backdrop-filter:blur(12px);animation:orbit-counter 24s linear infinite;transition:background .2s,border-color .2s,box-shadow .2s}
+.orbit-glyph{font-size:26px;line-height:1;color:#d4b8ff}
+.orbit-name{font:800 9px/1 system-ui,sans-serif;letter-spacing:.08em;color:#f2e9ff}
+.orbit-capri .orbit-token{border-color:#72b8ff7a}.orbit-capri .orbit-glyph{color:#8ecbff}
+.orbit-discord .orbit-token{border-color:#9299ff8c}.orbit-discord .orbit-glyph{color:#aeb3ff}
+.orbit-stop:hover .orbit-token,.orbit-stop:focus-visible .orbit-token{background:#332650;border-color:#e1ccff;box-shadow:0 0 34px #a678ff88}
+.orbit-universe:hover .orbit-path,.orbit-universe:hover .orbit-token,.orbit-universe:focus-within .orbit-path,.orbit-universe:focus-within .orbit-token{animation-play-state:paused}
+.orbit-hint{position:absolute;bottom:-32px;color:#a397c5;font:700 9px/1.4 system-ui,sans-serif;letter-spacing:.12em;white-space:nowrap}
+@keyframes orbit-spin{to{transform:rotate(360deg)}}
+@keyframes orbit-counter{from{transform:rotate(calc(-1 * var(--start-angle)))}to{transform:rotate(calc(-360deg - var(--start-angle)))}}
+@keyframes orbit-ring-spin{to{transform:rotate(360deg)}}
+@media(max-width:850px){.orbit-universe{--orbit-size:min(76vw,400px);min-width:280px;min-height:280px;margin:32px auto 55px}.orbit-token{width:69px;height:69px}.orbit-hint{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.orbit-path,.orbit-token,.orbit-ring-outer{animation:none!important}.orbit-eva .orbit-token{transform:rotate(0deg)}.orbit-capri .orbit-token{transform:rotate(-120deg)}.orbit-discord .orbit-token{transform:rotate(-240deg)}}
+
+/* Keep the whole universe and its labels upright; only the orbital path rotates. */
+.orbit-universe{animation:none!important;transform:none!important}
+.orbit-universe .orbit-core strong{animation:none!important;transform:none!important}
+.orbit-universe .orbit-token{transform-origin:center center}

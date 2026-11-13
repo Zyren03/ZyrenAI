@@ -1,0 +1,29 @@
+
+/* V7 — Project progress / Rose-inspired pixel dashboard */
+:root{--pixel-purple:#c77dff;--pixel-pink:#ff67c5;--pixel-green:#39e9a4}
+.progress-card{margin:18px 0 14px;padding:13px 14px;border:1px solid #6c507b;background:#100e1b;box-shadow:4px 4px 0 #06040a;position:relative}
+.progress-card:before{content:'✦';position:absolute;right:10px;top:7px;color:#ff7dc7;font-size:11px}
+.progress-label{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:12px;color:#e8d9f0;font-weight:700}
+.progress-value{color:var(--pixel-pink);font-size:18px;font-weight:900;letter-spacing:.5px}
+.progress-track{margin-top:10px;height:11px;border:1px solid #a77ab7;background:repeating-linear-gradient(90deg,#282039 0 9px,#100e1b 9px 12px);overflow:hidden}
+.progress-fill{display:block;height:100%;width:0;background:repeating-linear-gradient(90deg,#f67ac6 0 11px,#ffb65e 11px 23px,#b879fa 23px 34px,#63e7b0 34px 45px);transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.progress-card.is-visible .progress-fill{width:var(--progress)}
+.progress-note{font-size:11px;color:#b5a4c4;margin:8px 0 0}
+.project-status-section{margin:38px auto 60px;max-width:1050px;padding:0 22px}
+.project-status-shell{border:1px solid #72527f;background:linear-gradient(135deg,#130e1e,#090912 70%);padding:clamp(18px,4vw,34px);box-shadow:7px 7px 0 #08040d}
+.project-status-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.project-status-head h2{font-size:clamp(22px,3vw,32px);margin:0!important;letter-spacing:-.03em}
+.project-status-head .progress-card{min-width:min(100%,280px);margin:0}
+.project-status-list{display:grid;gap:0}
+.project-status-row{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid #513359;padding:13px 2px}
+.project-status-row:last-child{border-bottom:0}
+.project-status-row strong{font-size:14px;color:#f4e9fa;display:block}
+.project-status-row small{font-size:12px;color:#b9a6c6;display:block;margin-top:5px}
+.project-status-badge{flex:none;border:1px solid #39e9a4;color:#39e9a4;padding:5px 9px;font:700 11px/1.2 monospace}
+.project-status-badge.pending{color:#d8b1fa;border-color:#8e679e}
+.project-status-badge.wip{color:#ffbc74;border-color:#ffbc74}
+.project-status-disclaimer{font-size:12px;color:#b8a4c4;margin-top:20px;line-height:1.6}
+.project-card .progress-card{margin-top:16px}
+.project-card .project-card-body .go{display:inline-block;margin-top:12px}
+@media(max-width:540px){.project-status-row{align-items:flex-start}.project-status-badge{font-size:10px}.progress-card{padding:11px}}
+@media(prefers-reduced-motion:reduce){.progress-fill{transition:none}}

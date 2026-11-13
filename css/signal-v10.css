@@ -1,0 +1,23 @@
+/* Zyren V10: Beyond the Interface — self-contained signal experience */
+.zy-signal-section{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 52%,#23133752,transparent 60%),#090912;text-align:center}
+.zy-signal-wrap{max-width:1120px;padding-top:18px;padding-bottom:20px}
+.zy-signal-wrap>.eyebrow{justify-content:center;margin-bottom:25px}
+.zy-signal-wrap h2{max-width:940px;margin:0 auto;font-size:clamp(2rem,4.8vw,4.3rem);line-height:1.12;letter-spacing:-.045em}
+.zy-signal-subtitle{font-size:clamp(1rem,1.7vw,1.3rem);color:#b6afc9;margin:24px auto 30px}
+.zy-signal-panel{position:relative;min-height:300px;display:flex;align-items:center;justify-content:center;isolation:isolate;overflow:hidden;cursor:crosshair;border:1px solid #c19eff24;border-radius:24px;background:radial-gradient(ellipse at 50% 50%,#4a287849 0%,#170f2b5c 42%,#0d0c1a 78%);box-shadow:inset 0 1px #ffffff0b,0 24px 65px #05030e70;outline-offset:5px;transition:border-color .3s}
+.zy-signal-panel:hover,.zy-signal-panel:focus-visible{border-color:#c19eff77}
+.zy-signal-halo{position:absolute;z-index:-1;width:390px;height:390px;border-radius:50%;background:radial-gradient(circle,#a25bfa30,transparent 67%);filter:blur(14px);transform:translate(var(--cursor-x,0px),var(--cursor-y,0px));transition:transform .25s ease-out;pointer-events:none}
+.zy-signal-visual{height:170px;display:flex;align-items:center;justify-content:center;gap:5px;max-width:calc(100% - 45px);pointer-events:none}
+.zy-signal-bar{display:block;width:5px;min-width:3px;height:var(--height);border-radius:99px;background:linear-gradient(180deg,#e9c4ff,#a773f8 50%,#6547d8);box-shadow:0 0 16px #a87afa75;transform:scaleY(.38);animation:zy-signal-breathe var(--duration,1.7s) ease-in-out infinite alternate;animation-delay:var(--delay,0s);opacity:.85;transition:background .3s}
+.zy-signal-panel.is-reacting .zy-signal-bar{background:linear-gradient(180deg,#fff2ff,#d5a4ff 40%,#9364ff);box-shadow:0 0 24px #bd82ff}
+.zy-signal-live{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:9px;color:#bda8e2;font:700 10px/1.2 ui-monospace,monospace;letter-spacing:.19em;white-space:nowrap}
+.zy-signal-dot{width:7px;height:7px;border-radius:50%;background:#6cf3c3;box-shadow:0 0 12px #6cf3c3}
+.zy-signal-coordinates{position:absolute;right:24px;top:20px;color:#827595;font:600 10px ui-monospace,monospace;letter-spacing:.15em}
+.zy-signal-steps{display:grid;grid-template-columns:repeat(3,1fr);max-width:800px;margin:35px auto 0;gap:16px}
+.zy-signal-steps>div{display:flex;flex-direction:column;gap:7px;padding:8px 10px}
+.zy-signal-steps span{font:700 10px ui-monospace,monospace;color:#a88ad2;letter-spacing:.16em}
+.zy-signal-steps strong{font-size:clamp(1.05rem,1.6vw,1.4rem);color:#f0e9ff}
+.zy-signal-footnote{margin:27px auto 0;max-width:680px;color:#858099;font-size:12px;line-height:1.6}
+@keyframes zy-signal-breathe{from{transform:scaleY(.22);opacity:.4}to{transform:scaleY(1);opacity:1}}
+@media(max-width:650px){.zy-signal-panel{min-height:250px}.zy-signal-visual{gap:3px}.zy-signal-bar{width:3px}.zy-signal-steps{gap:0}.zy-signal-steps span{font-size:8px}.zy-signal-footnote{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.zy-signal-bar{animation:none;transform:scaleY(.7)}.zy-signal-halo{transition:none}}

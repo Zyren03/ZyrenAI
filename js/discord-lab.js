@@ -40,4 +40,6 @@ document.querySelectorAll('[data-dl-quick]').forEach(b=>b.addEventListener('clic
 document.querySelectorAll('[data-dl-channel]').forEach(b=>b.addEventListener('click',()=>{clearTimeout(replyTimer);channel=b.dataset.dlChannel;render()}));
 document.getElementById('dlClear').addEventListener('click',()=>{clearTimeout(replyTimer);history[channel]=messages[channel].map(m=>({...m}));render()});
 render();
+const hm=location.hash.match(/^#msg=(.*)$/);if(hm){let m='';try{m=decodeURIComponent(hm[1]).slice(0,120)}catch(_){}if(m){channel='eva-bot';render();add('Eva','✉ Message envoyé depuis Eva (Windows) : « '+m+' »',{title:'✦ Pont Eva Windows → Discord',description:'Simulation : ce message a été préparé dans la démo d’Eva et affiché ici, sans aucun envoi réel.'});window.history.replaceState(null,'',location.pathname);lab.scrollIntoView({block:'center'})}}
+
 })();

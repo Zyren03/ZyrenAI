@@ -1,0 +1,59 @@
+/* Design V12 : base unique, contrastes et boutons (chargé en dernier) */
+:root{--muted:#c3bddb;--line:#ffffff2b;--accent:#c4a6ff;--accent-strong:#d9c4ff;--btn-bg:#3b2a57;--btn-bd:#c9aaff;--btn-fg:#fff}
+body{font-size:1.02rem;background-color:#07070f}
+h1,h2{font-weight:700;text-wrap:balance}
+p{max-width:68ch}
+.lead{font-size:1.14rem;color:#d3cee6}
+.eyebrow{letter-spacing:.14em;color:var(--accent-strong)}
+.nav{background:#07070fe6;border-bottom-color:#ffffff24}
+.nav-links a{color:#ddd8ee;font-size:.92rem;padding:8px 2px;border-bottom:2px solid transparent}
+.nav-links a:hover{color:#fff}
+.nav-links a.active{color:#fff;border-bottom-color:var(--accent)}
+.nav-menu{min-width:44px;min-height:44px;border-color:#ffffff40}
+/* Boutons principaux */
+.btn{min-height:48px;padding:12px 22px;font-size:.95rem;border-width:1.5px}
+.btn.primary{background:linear-gradient(135deg,#d5bcff,#a97cf5);color:#150b26;border-color:transparent;box-shadow:0 8px 28px #a46dff55}
+.btn.primary:hover{background:linear-gradient(135deg,#e6d6ff,#b88dff)}
+.btn.ghost{background:#ffffff14;border-color:#ffffff59;color:#fff}
+.btn.ghost:hover{background:#ffffff26;border-color:#fff}
+.tag{color:#eee7ff;border-color:#ffffff47;background:#ffffff12;font-size:.74rem}
+.tag.accent{color:#f1e6ff;background:#a46dff30;border-color:#c4a6ff99}
+/* Cartes projets */
+.project-card .go{color:var(--accent-strong);font-size:.95rem}
+.project-card-body p{color:#cfc9e4}
+.project-card .tag{margin-right:6px}
+.feature p,.section-head p{color:#cfc9e4}
+/* Boutons des démos : fond clair assumé, texte blanc, bordure nette */
+body .eva-demo-chips button,body .eva-commands button,body .eva-demo-footer button,body .eva-v6-controls button,body .eva-v6-taskbar button,
+body .dl-actions button,body .dl-v6-moderation button,body .discord-demo-controls button,
+body .cp-tool-buttons button,body .cp-demo-footer button,body .desktop-demo-controls button{background:var(--btn-bg);color:var(--btn-fg);border:1px solid var(--btn-bd);min-height:40px;font-size:.82rem}
+body .eva-demo-chips button:hover,body .eva-commands button:hover,body .eva-demo-footer button:hover,body .eva-v6-controls button:hover,
+body .dl-actions button:hover,body .dl-v6-moderation button:hover,body .cp-tool-buttons button:hover,body .desktop-demo-controls button:hover{background:#5a3f86;border-color:#fff}
+body .dl-actions button,body .dl-v6-moderation button,body .discord-demo-controls button{background:#2e3270;border-color:#aab4ff}
+body .dl-actions button:hover,body .dl-v6-moderation button:hover{background:#4650b8}
+body .cp-tool-buttons button,body .cp-demo-footer button,body .desktop-demo-controls button{background:#1d4468;border-color:#8dd7ff}
+body .eva-input button:not(:disabled),body .dl-composer button{color:#fff;background:#7c4dd6}
+body .eva-input button{color:#fff;background:#7c4dd6;min-width:44px}
+body .eva-input button[disabled]{opacity:.75}
+/* Capri (style terminal) : textes plus clairs, onglets distincts */
+body .cr-icons button{color:#7ffcf4;background:#1b1026;border-color:#ffffff30}
+body .cr-tabs button,body .cr-tabs button+button{background:#0b2a33;color:#aafaf5;border-color:#2fb5bd}
+body .cr-tabs button+button{background:#33121f;color:#ffb3c2;border-color:#ff6f91}
+body .cr-tabs button.active{background:#0c6a74;color:#fff}
+body .cr-input-row button,body .cr-main-buttons button,body .cr-v6-buttons button{background:#2b1030;color:#ffd0da;border:1px solid #ff6f91}
+body .cr-toolbar button,body .cr-taskbar button{background:#1b2a3a;color:#aafaf5;border:1px solid #2fb5bd}
+body .cr-input-row button:hover,body .cr-main-buttons button:hover,body .cr-v6-buttons button:hover,body .cr-toolbar button:hover,body .cr-taskbar button:hover{background:#4c1930;color:#fff}
+body .cr-main-head button,body .cr-app-title button{color:#fff;min-width:32px;min-height:32px}
+body .cr-menu button{color:#fff}
+body .cr-v6-grid label,body .cr-muted,body .cr-hint{color:#d0e0ea}
+/* Statut du projet */
+.project-status-badge{font-size:11px}
+.progress-note,.progress-label{color:#bbb6d4}
+.footer{color:#c3bddb}
+:focus-visible{outline:3px solid #fff!important;outline-offset:3px;box-shadow:0 0 0 6px #7c4dd6}
+@media(max-width:720px){.btn{width:100%}.actions{gap:10px}}
+
+.eva-dm-link{display:inline-block;margin-top:10px;padding:9px 14px;border-radius:10px;background:#5b3ca8;color:#fff;font-weight:700;border:1px solid #d0b2ff;text-decoration:none}
+.eva-dm-link:hover{background:#7650cc}
+.eva-guide{margin:0;padding:10px 16px;font-size:.88rem;color:#d9d2ee;border-top:1px solid var(--line)}
+#crSticker,#crSticker img{-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}

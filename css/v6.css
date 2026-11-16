@@ -1,6 +1,4 @@
 /* Zyren AI Universe V6 polish */
-.v6-page{animation:v6Enter .5s ease both}.v6-page.v6-leaving{opacity:0;transform:translateY(8px);transition:opacity .22s,transform .22s}
-@keyframes v6Enter{from{opacity:.2;transform:translateY(9px)}to{opacity:1;transform:none}}
 .cr-mode-label{position:absolute;top:48px;left:12px;z-index:3;color:#6bfff5;font:10px monospace;letter-spacing:.12em;pointer-events:none}
 .cr-v6-settings{margin:20px 10px 15px;padding:14px;background:#0d0a14;border:1px solid #f23d6c5e;color:#d7f6ff;font-family:monospace;font-size:11px}
 .cr-v6-title{color:#ff547c;font-weight:800;margin-bottom:13px}.cr-v6-title span{float:right;color:#69e9f6;font-size:9px}
@@ -10,4 +8,4 @@
 .eva-v6-taskbar{position:absolute;bottom:0;left:0;right:0;display:flex;gap:5px;padding:5px 8px;background:#100e2acb;backdrop-filter:blur(8px);z-index:15}.eva-v6-taskbar button{border:1px solid #a991fa55;background:#40315b;color:#eee7ff;border-radius:5px;padding:5px 8px;font-size:10px;cursor:pointer}.eva-v6-taskbar span{margin-left:auto;font-size:8px;color:#a99dc9;align-self:center}
 .dl-chat{position:relative}.dl-v6-suggestions{position:absolute;bottom:111px;left:16px;right:16px;z-index:12;background:#202127;border:1px solid #5865f2;border-radius:10px;padding:6px;box-shadow:0 10px 35px #0008;max-height:250px;overflow:auto}.dl-v6-suggestions[hidden]{display:none}.dl-v6-choice{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;border:0;background:transparent;color:#c9c6f5;text-align:left;padding:9px 12px;border-radius:6px;cursor:pointer}.dl-v6-choice.selected,.dl-v6-choice:hover{background:#5865f24a}.dl-v6-choice small{color:#b1b3bd;font-size:10px}.dl-v6-moderation{border-top:1px solid #ffffff14;background:#282a30;padding:8px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}.dl-v6-moderation span{font-size:9px;color:#b0b3c3;margin-right:auto}.dl-v6-moderation button{border:1px solid #777c9b55;border-radius:5px;background:#3a3b48;color:#e0dff7;font-size:10px;padding:6px;cursor:pointer}.dl-v6-system{padding:10px;margin:8px 0;background:#5865f218;border-left:3px solid #9d89ff;border-radius:4px;color:#c5baff;font-size:11px}
 @media(max-width:600px){.cr-v6-grid{grid-template-columns:1fr}.dl-v6-moderation span{width:100%}.eva-v6-taskbar span{display:none}}
-@media(prefers-reduced-motion:reduce){.v6-page{animation:none}.eva-v6-mic.listening{animation:none}}
+@media(prefers-reduced-motion:reduce){.eva-v6-mic.listening{animation:none}}

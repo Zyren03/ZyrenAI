@@ -20,3 +20,7 @@ a.btn:active,.btn:active{transform:translateY(0) scale(.98)}
 .v11-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}
 @media(max-width:720px){.v11-floating-nav{right:8px;bottom:8px;left:8px;justify-content:space-around}.v11-floating-nav a{min-width:0;flex:1;font-size:9px}.v11-top{bottom:90px;right:12px}.hero h1{overflow-wrap:break-word}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.v11-fade{animation:none!important}a.btn,.btn,.v11-floating-nav a{transition:none!important}}
+
+/* V12 : lisibilité */
+.orbit-hint,.orbit-core span,.orbit-name{font-size:11px}.progress-note,.progress-label{font-size:11px}.zy-signal-steps span,.zy-signal-live,.zy-signal-coordinates{font-size:11px}.nav{position:sticky;top:0;z-index:40;background:#080812cc}
+@media(max-width:720px){.footer{padding-bottom:96px}}

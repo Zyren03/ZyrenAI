@@ -10,8 +10,8 @@
 .orbit-path{position:absolute;inset:0;z-index:3;animation:orbit-spin 24s linear infinite}
 .orbit-stop{position:absolute;left:50%;top:50%;width:0;height:0;display:grid;place-items:center;text-decoration:none;outline-offset:10px}
 .orbit-eva{--start-angle:0deg;transform:rotate(0deg) translateY(calc(var(--orbit-size) * -.42))}
-.orbit-capri{--start-angle:120deg;transform:rotate(120deg) translateY(calc(var(--orbit-size) * -.42))}
-.orbit-discord{--start-angle:240deg;transform:rotate(240deg) translateY(calc(var(--orbit-size) * -.42))}
+.orbit-capri{--start-angle:240deg;transform:rotate(240deg) translateY(calc(var(--orbit-size) * -.42))}
+.orbit-discord{--start-angle:120deg;transform:rotate(120deg) translateY(calc(var(--orbit-size) * -.42))}
 .orbit-token{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:78px;height:78px;border:1px solid #bfa1ff66;border-radius:20px;background:linear-gradient(140deg,#25203e,#0d1022);box-shadow:0 10px 35px #050410c9,0 0 25px #9c63ff2e;backdrop-filter:blur(12px);animation:orbit-counter 24s linear infinite;transition:background .2s,border-color .2s,box-shadow .2s}
 .orbit-glyph{font-size:26px;line-height:1;color:#d4b8ff}
 .orbit-name{font:800 9px/1 system-ui,sans-serif;letter-spacing:.08em;color:#f2e9ff}
@@ -24,7 +24,7 @@
 @keyframes orbit-counter{from{transform:rotate(calc(-1 * var(--start-angle)))}to{transform:rotate(calc(-360deg - var(--start-angle)))}}
 @keyframes orbit-ring-spin{to{transform:rotate(360deg)}}
 @media(max-width:850px){.orbit-universe{--orbit-size:min(76vw,400px);min-width:280px;min-height:280px;margin:32px auto 55px}.orbit-token{width:69px;height:69px}.orbit-hint{font-size:8px}}
-@media(prefers-reduced-motion:reduce){.orbit-path,.orbit-token,.orbit-ring-outer{animation:none!important}.orbit-eva .orbit-token{transform:rotate(0deg)}.orbit-capri .orbit-token{transform:rotate(-120deg)}.orbit-discord .orbit-token{transform:rotate(-240deg)}}
+@media(prefers-reduced-motion:reduce){.orbit-path,.orbit-token,.orbit-ring-outer{animation:none!important}.orbit-eva .orbit-token{transform:rotate(0deg)}.orbit-capri .orbit-token{transform:rotate(-240deg)}.orbit-discord .orbit-token{transform:rotate(-120deg)}}
 
 /* Keep the whole universe and its labels upright; only the orbital path rotates. */
 .orbit-universe{animation:none!important;transform:none!important}

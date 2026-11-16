@@ -2,7 +2,7 @@
 const body=document.body;
 const bar=document.createElement('div');bar.className='v11-scroll';bar.setAttribute('aria-hidden','true');document.body.append(bar);
 const grain=document.createElement('div');grain.className='v11-grain';grain.setAttribute('aria-hidden','true');document.body.prepend(grain);
-const pages=[['index.html','⌂','Accueil'],['eva.html','◈','Eva'],['capri.html','✿','Capri'],['discord.html','⌘','Discord']];
+const pages=[['index.html','⌂','Accueil'],['eva.html','◈','Eva'],['discord.html','⌘','Eva Discord'],['capri.html','✿','Capri']];
 const current=(location.pathname.split('/').pop()||'index.html').toLowerCase();
 const nav=document.createElement('nav');nav.className='v11-floating-nav';nav.setAttribute('aria-label','Navigation rapide entre les projets');
 for(const [href,icon,label] of pages){const a=document.createElement('a');a.href=href;a.title=label;a.setAttribute('aria-label','Aller à '+label);if(current===href)a.setAttribute('aria-current','page');const symbol=document.createElement('span');symbol.textContent=icon;symbol.setAttribute('aria-hidden','true');a.append(symbol,document.createTextNode(label));nav.append(a)}

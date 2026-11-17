@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Journal technique — Zyren AI Lab</title><meta content="Documentation technique complète des projets EVA, EVA Discord, Capri et du site Zyren AI Lab." name="description"/><link href="css/global.css" rel="stylesheet"/><link href="css/design.css" rel="stylesheet"/><link href="css/refinement-v15.css" rel="stylesheet"/><link href="css/docs-reader-v15.css" rel="stylesheet"/><link href="css/zyren-2.0.css" rel="stylesheet"/><meta content="Zyren AI Lab 2.0" name="application-name"/></head><body class="v6-page journal-page"><header class="nav container"><a class="brand" href="index.html">✦ ZYREN <span>AI LAB · 2.0</span></a><nav aria-label="Navigation principale" class="nav-links"><a href="index.html">Accueil</a><a href="eva.html">EVA Windows</a><a href="discord.html">EVA Discord</a><a href="capri.html">Capri</a><a href="lab.html">AI Lab</a><a href="portfolio.html">Portfolio</a></nav><button aria-expanded="false" aria-label="Ouvrir le menu" class="nav-menu" data-menu="">☰</button></header><main class="journal-main container"><div class="journal-hero"><div class="zy2-doc-toolbar"><span class="zy2-doc-pill">VERSION 2.0</span><span class="zy2-doc-pill">15 CHAPITRES</span><span class="zy2-doc-pill">DOCUMENTATION PUBLIQUE</span></div><p class="eyebrow">ZYREN AI LAB / DOCUMENTATION OFFICIELLE / VERSION 2.0</p><h1>Documentation <span class="gradient">technique.</span></h1><p>Une documentation claire et complète pour comprendre les projets EVA Windows, EVA Discord, Capri, les démonstrations du site et leur architecture.</p><a class="btn ghost" href="portfolio.html">← Retour au portfolio</a><div class="zy2-doc-actions"><a href="README.md">Lire le README</a><a href="portfolio.html">Voir le portfolio</a></div></div><div class="journal-layout"><aside aria-label="Sommaire de la documentation" class="journal-aside docs-aside"><strong>Sommaire</strong><input aria-label="Rechercher dans la documentation" id="docs-search" placeholder="Rechercher dans le journal…" type="search"/><nav class="docs-toc"><a href="#section-1">01 · Présentation</a><a href="#section-2">02 · Carte du site</a><a href="#section-3">03 · EVA Windows — assistant de bureau</a><a href="#section-4">04 · EVA Discord — bot communautaire</a><a href="#section-5">05 · Capri — compagnon animé</a><a href="#section-6">06 · Démonstrations et limites</a><a href="#section-7">07 · Architecture du site</a><a href="#section-8">08 · Historique des blocs</a><a href="#section-9">09 · Installation et publication</a><a href="#section-10">10 · Tests recommandés</a><a href="#section-11">11 · Améliorations futures</a><a href="#section-12">12 · Inventaire du dépôt</a><a href="#section-13">13 · Maintenance</a><a href="#section-14">14 · Crédits et transparence</a><a href="#section-15">15 · Explorateurs et documentation</a></nav></aside><article class="journal-content docs-content"><section class="journal-section docs-section" id="section-1"><h2>1. Présentation</h2>
+<p>Zyren AI Lab est un site vitrine statique dédié aux projets EVA Windows, EVA Discord et Capri. Il présente des prototypes, des simulations interactives, les choix techniques et les limites de chaque démonstration. Les interfaces du site <strong>ne sont pas des connexions à des services privés</strong>.</p>
+<h3>Objectifs</h3>
+<ul>
+<li>Montrer des projets concrets plutôt qu'une simple galerie d'images.</li>
+<li>Permettre l'exploration sans installation et sans accès aux machines de l'auteur.</li>
+<li>Séparer les démonstrations du site des véritables applications locales.</li>
+<li>Documenter les décisions de conception, les versions et les limites.</li>
+<li>Rester compatible avec GitHub Pages et les hébergements de fichiers statiques.</li>
+</ul>
+</section><section class="journal-section docs-section" id="section-2"><h2>2. Carte du site</h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>index.html</code></td>
+<td>Accueil, identité visuelle, présentation des trois projets, terminal ZyrenOS</td>
+</tr>
+<tr>
+<td><code>eva.html</code></td>
+<td>EVA Windows, commandes et démonstration d'interface</td>
+</tr>
+<tr>
+<td><code>discord.html</code></td>
+<td>EVA Discord, modules, simulation et architecture</td>
+</tr>
+<tr>
+<td><code>capri.html</code></td>
+<td>Compagnon Capri, sprites et interface animée</td>
+</tr>
+<tr>
+<td><code>lab.html</code></td>
+<td>Simulations interactives EVA Discord, dashboard et Capri</td>
+</tr>
+<tr>
+<td><code>portfolio.html</code></td>
+<td>Portfolio technique, études de cas, architecture et outils</td>
+</tr>
+<tr>
+<td><code>journal.html</code></td>
+<td>Journal technique détaillé, lisible depuis le site</td>
+</tr>
+<tr>
+<td><code>mentions-legales.html</code></td>
+<td>Informations légales</td>
+</tr>
+</tbody>
+</table>
+</section><section class="journal-section docs-section" id="section-3"><h2>3. EVA Windows — assistant de bureau</h2>
+<p><strong>But :</strong> assistant local pour Windows combinant commandes vocales françaises, chat et personnage pixel art. Le projet applicatif est distinct de la démonstration web.</p>
+<p><strong>Pistes et fonctionnalités travaillées :</strong> C#/.NET 8 WinForms ; reconnaissance vocale Vosk FR ; commandes ouvrir/fermer des applications ; plans d'actions multi-étapes (<code>/plan</code>, <code>/executer</code>, <code>/annuler</code>) ; gestion du micro ; panneaux Chat, Applications, Tenues, Animations, Mémoire, Thèmes et Système ; suivi CPU/RAM/GPU/VRAM ; interactions Discord Rich Presence.</p>
+<p><strong>Points d'attention :</strong> certaines fonctions ont connu des erreurs de compilation et de fonctionnement (notamment fenêtres, tenues et Discord RP). Ne pas présenter l'ensemble comme une version stable ou validée. Les commandes Windows ne sont pas exécutées par le site.</p>
+</section><section class="journal-section docs-section" id="section-4"><h2>4. EVA Discord — bot communautaire</h2>
+<p><strong>But :</strong> bot Python pour Discord, réunissant configuration, modération, IA, communauté et automatisations.</p>
+<p><strong>Architecture de travail :</strong> processus bot Python privé ; modules/cogs ; routeur IA et moteurs Claude, Groq ou Ollama selon configuration ; dashboard privé local ; configuration par serveur.</p>
+<p><strong>Huit domaines de configuration présentés dans le laboratoire :</strong> intelligence IA, protection, journaux, communauté, niveaux XP, automatisations, confidentialité et accueil. Les réglages du laboratoire sont <strong>fictifs</strong> et n'écrivent jamais dans le serveur Discord.</p>
+<p><strong>État de l'IA :</strong> des tests directs d'Ollama ont fonctionné, mais la commande <code>/ask</code> du bot a rencontré une indisponibilité des fournisseurs (<code>ProviderUnavailable providers={}</code>). Cette intégration doit être considérée comme en cours de diagnostic, non comme un service public opérationnel.</p>
+<p><strong>Sécurité :</strong> ne pas publier les tokens Discord, les clés IA, les identifiants privés, les fichiers <code>.env</code>, les bases de données ni le dashboard local.</p>
+</section><section class="journal-section docs-section" id="section-5"><h2>5. Capri — compagnon animé</h2>
+<p><strong>But :</strong> présenter un compagnon de bureau animé, avec expressions, tenues et interactions. Les sprites sont conservés dans <code>assets/capri/</code>.</p>
+<p><strong>Historique technique :</strong> exploration d'un compagnon Chrome/Ollama, d'un runtime local et d'une application Windows Capri. La page publique propose une expérience illustrative et un studio de sprites, sans contrôle réel du bureau. Capri est présenté comme un projet distinct de l'univers EVA ; éviter de revendiquer la création du logiciel tiers d'origine.</p>
+</section><section class="journal-section docs-section" id="section-6"><h2>6. Démonstrations et limites</h2>
+<ul>
+<li><strong>ZyrenOS :</strong> terminal simulé dans le navigateur. Les commandes affichent des informations ou naviguent sur le site ; aucune commande système n'est exécutée.</li>
+<li><strong>AI Lab :</strong> démonstrations à données fictives, sans connexion au bot ou au dashboard privé.</li>
+<li><strong>EVA :</strong> interface illustrative, pas une exécution distante de l'assistant Windows.</li>
+<li><strong>Capri :</strong> interactions visuelles, pas un accès au compagnon installé sur l'ordinateur du visiteur.</li>
+<li><strong>Médias :</strong> les sections « Vidéo à venir » ont été remplacées par des accès aux démos interactives existantes.</li>
+</ul>
+</section><section class="journal-section docs-section" id="section-7"><h2>7. Architecture du site</h2>
+<pre><code class="language-text">Navigateur
+  ├── Pages HTML (accueil, projets, lab, portfolio, journal)
+  ├── CSS (thème, composants, responsive, améliorations V15)
+  ├── JavaScript (navigation, simulations, animations, terminal)
+  └── Assets (sprites et visuels locaux)
+
+Applications privées (hors site)
+  ├── EVA Windows / C#
+  ├── EVA Discord / Python + dashboard local
+  └── Capri / runtime local
+</code></pre>
+<p>Aucun backend n'est nécessaire pour servir le site. Les données des démonstrations ne constituent pas des données de production.</p>
+</section><section class="journal-section docs-section" id="section-8"><h2>8. Historique des blocs</h2>
+<table>
+<thead>
+<tr>
+<th>Bloc</th>
+<th>Livrables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V12</td>
+<td>Refonte visuelle et enrichissement de la fiche EVA Discord</td>
+</tr>
+<tr>
+<td>V13 — Visual Experience</td>
+<td>Identité cyberpunk, animations, terminal ZyrenOS et interface néon</td>
+</tr>
+<tr>
+<td>V14 — Interactive AI Lab</td>
+<td>Simulations des huit panneaux EVA Discord, dashboard fictif, studio Capri</td>
+</tr>
+<tr>
+<td>V15 — Developer Portfolio</td>
+<td>Études de cas, architecture, stack, historique, documentation et harmonisation</td>
+</tr>
+</tbody>
+</table>
+<p>Les numéros V13/V14/V15 désignent des <strong>blocs du site</strong>, pas des versions du bot Discord ou des applications Windows.</p>
+</section><section class="journal-section docs-section" id="section-9"><h2>9. Installation et publication</h2>
+<ol>
+<li>Extraire l'archive.</li>
+<li>Ouvrir <code>index.html</code> pour un premier contrôle.</li>
+<li>Pour un test plus réaliste, utiliser un serveur statique local (<code>python -m http.server 8000</code>).</li>
+<li>Vérifier navigation, terminal, démos, responsive et console du navigateur.</li>
+<li>Publier le contenu du dossier <code>ZyrenAI-git/</code> à la racine de la branche GitHub Pages choisie.</li>
+<li>Ne jamais inclure de secrets ou fichiers privés dans le dépôt.</li>
+</ol>
+</section><section class="journal-section docs-section" id="section-10"><h2>10. Tests recommandés</h2>
+<ul>
+<li>Liens internes et chemins relatifs depuis toutes les pages.</li>
+<li>Menu mobile, fermeture par Échap et navigation au clavier.</li>
+<li>Terminal ZyrenOS, historique et commandes documentées.</li>
+<li>Simulations AI Lab sans requêtes privées.</li>
+<li>Images Capri, contraste, tailles d'écran, réduction des animations.</li>
+<li>Console JavaScript sans erreurs, et chargement des assets en HTTPS.</li>
+</ul>
+</section><section class="journal-section docs-section" id="section-11"><h2>11. Améliorations futures</h2>
+<ul>
+<li>Ajouter de véritables captures ou enregistrements lorsque disponibles et autorisés.</li>
+<li>Documenter des tests reproductibles et des résultats mesurés.</li>
+<li>Améliorer les performances des animations sur machines modestes.</li>
+<li>Ajouter une documentation technique plus profonde pour chaque dépôt public.</li>
+<li>Effectuer un audit complet d'accessibilité et de compatibilité mobile.</li>
+</ul>
+</section><section class="journal-section docs-section" id="section-12"><h2>12. Inventaire du dépôt</h2>
+<h3>Feuilles de style</h3>
+<ul>
+<li><code>css/capri-real.css</code></li>
+<li><code>css/capri.css</code></li>
+<li><code>css/design.css</code></li>
+<li><code>css/discord.css</code></li>
+<li><code>css/eva-discord-v12.css</code></li>
+<li><code>css/eva.css</code></li>
+<li><code>css/global.css</code></li>
+<li><code>css/legal.css</code></li>
+<li><code>css/orbit-v9.css</code></li>
+<li><code>css/signal-v10.css</code></li>
+<li><code>css/v11.css</code></li>
+<li><code>css/v12.css</code></li>
+<li><code>css/v13.css</code></li>
+<li><code>css/v14-lab.css</code></li>
+<li><code>css/v15-portfolio.css</code></li>
+<li><code>css/v6.css</code></li>
+<li><code>css/v7.css</code></li>
+<li><code>css/v8.css</code></li>
+</ul>
+<h3>Scripts</h3>
+<ul>
+<li><code>js/capri-playground.js</code></li>
+<li><code>js/capri-real.js</code></li>
+<li><code>js/capri-touch.js</code></li>
+<li><code>js/capri-v6.js</code></li>
+<li><code>js/capri.js</code></li>
+<li><code>js/discord-lab.js</code></li>
+<li><code>js/discord-v6.js</code></li>
+<li><code>js/discord.js</code></li>
+<li><code>js/eva-v6.js</code></li>
+<li><code>js/eva.js</code></li>
+<li><code>js/lab-v14.js</code></li>
+<li><code>js/main.js</code></li>
+<li><code>js/progress-v7.js</code></li>
+<li><code>js/signal-v10.js</code></li>
+<li><code>js/site-v11.js</code></li>
+<li><code>js/site-v12.js</code></li>
+<li><code>js/site-v13.js</code></li>
+<li><code>js/site-v15.js</code></li>
+<li><code>js/site-v6.js</code></li>
+<li><code>js/uiverse-v8.js</code></li>
+</ul>
+<h3>Sprites Capri</h3>
+<p>75 images PNG présentes dans <code>assets/capri/</code> (noms conservés pour compatibilité).</p>
+</section><section class="journal-section docs-section" id="section-13"><h2>13. Maintenance</h2>
+<p>Modifier les contenus dans les pages HTML et les composants associés. <code>css/refinement-v15.css</code> centralise les améliorations de cartes, de navigation et de documentation. Ne pas ajouter de pourcentages d'avancement sans critères mesurables. Les liens de démonstration doivent pointer vers des fonctionnalités existantes.</p>
+</section><section class="journal-section docs-section" id="section-14"><h2>14. Crédits et transparence</h2>
+<p>Les noms des produits et services tiers restent la propriété de leurs détenteurs. Les prototypes et simulations sont présentés à des fins de portfolio ; ils ne constituent pas des services publics connectés ou des preuves de disponibilité en production.</p>
+</section><section class="journal-section docs-section" id="section-15"><h2>15. Explorateurs de fonctionnalités et lecteur de documentation</h2>
+<p>Chaque page projet (<code>eva.html</code>, <code>discord.html</code>, <code>capri.html</code>) possède désormais une grille de six fonctionnalités propres au projet. Les cartes ouvrent un panneau de détail dans la même page, accessible au clavier, refermable par le bouton de fermeture ou la touche Échap. Le panneau renvoie vers les simulations disponibles et indique explicitement leur caractère illustratif.</p>
+<p>Le journal <code>journal.html</code> affiche les sections du présent README sous forme de HTML rendu depuis Markdown lors de la construction du site. Les titres, listes, tableaux, citations et blocs de code sont stylés pour conserver un contraste suffisant. Le sommaire est navigable et une recherche locale filtre les sections sans requête réseau. Pour mettre à jour la documentation affichée, il faut régénérer <code>journal.html</code> à partir du README (le navigateur n'exécute aucun moteur Markdown distant).</p>
+<p>Fichiers ajoutés : <code>css/feature-explorer-v15.css</code>, <code>js/feature-explorer-v15.js</code>, <code>css/docs-reader-v15.css</code>, <code>js/docs-reader-v15.js</code>.</p>
+</section></article></div></main><script defer="" src="js/main.js"></script><script defer="True" src="js/docs-reader-v15.js"></script><script defer="True" src="js/zyren-2.0.js"></script><button aria-label="Retour en haut" class="zy2-backtop" type="button">↑ Haut</button></body></html>

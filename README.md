@@ -189,3 +189,14 @@ Fichiers ajoutés : `css/feature-explorer-v15.css`, `js/feature-explorer-v15.js`
 - Les pages du site partagent désormais une feuille de style de consolidation `css/zyren-2.0.css` et un script `js/zyren-2.0.js`.
 - Le lecteur de documentation a été retravaillé pour le contraste, la hiérarchie visuelle, la navigation et les petits écrans.
 - Les fonctionnalités des projets locaux sont documentées comme expérimentales lorsque leur validation n'est pas confirmée.
+
+
+## Démonstration EVA Discord — ZyrenAI 2.0
+
+La page `discord.html` propose un simulateur Discord local, réalisé en HTML, CSS et JavaScript. Il reprend les colonnes de serveurs, de salons, de messages et de membres. Les salons `#annonces`, `#règlement`, `#général`, `#projets`, `#eva-bot`, `#niveaux`, `#tickets`, `#logs` et le salon vocal fictif possèdent chacun leur contenu.
+
+Dans `#eva-bot`, taper `/` ouvre une liste de commandes filtrée au clavier. Les commandes simulées comprennent `/help`, `/ping`, `/profil`, `/stats`, `/avatar`, `/config`, `/ask`, `/warn`, `/timeout`, `/purge`, `/ticket`, `/xp` et `/clear`. `/config` ouvre huit modules interactifs avec réglages fictifs (Accueil, Intelligence IA, Protection, Journaux, Communauté, Niveaux XP, Automatisations, Confidentialité). Les avertissements et tickets de démonstration alimentent les salons correspondants.
+
+**Confidentialité :** le simulateur n'appelle aucune API, n'envoie aucun message Discord, n'accède à aucune clé privée et ne conserve aucun paramètre au-delà de la session de page. Les réponses IA sont pré-écrites et clairement identifiées comme simulées.
+
+**Fichiers :** `css/discord-simulator-2.css`, `js/discord-simulator-2.js` et `discord.html`. Les anciens scripts de simulation sont conservés dans le projet pour compatibilité historique, mais ne sont plus chargés par `discord.html`.
